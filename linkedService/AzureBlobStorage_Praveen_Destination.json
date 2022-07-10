@@ -1,0 +1,13 @@
+{
+	"name": "AzureBlobStorage_Praveen_Destination",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Destination_storage",
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=trainingblob328;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDEyQjcxRjg2LUJCOTAtNDMxMi1CMDRELTZGRjA1NzFDM0RCRV83YjQ0YjA0Ni0yMWJhLTQyYmYtOTgyZS0wYTc2MzNlYjQ2OWUiDQp9"
+		}
+	}
+}

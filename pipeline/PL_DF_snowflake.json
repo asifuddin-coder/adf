@@ -1,0 +1,35 @@
+{
+	"name": "PL_DF_snowflake",
+	"properties": {
+		"description": "Pipeline to transfer data in snowfalke using the DF",
+		"activities": [
+			{
+				"name": "Snowfalke_run",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "DF_snowfalkedemo",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-07-01T16:52:28Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
